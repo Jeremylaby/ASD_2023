@@ -1,0 +1,27 @@
+import tkinter as tk
+from tkinter import ttk
+
+from PIL import Image, ImageTk
+# Funkcja do wyświetlania informacji na płótnie
+def display_info():
+    # Wyczyść płótno, jeśli jest już coś na nim
+    canvas.delete("all")
+    
+    # Wyświetl tekst na płótnie
+    text = "To jest przykładowy tekst."
+    canvas.create_text(1000, 1000, text=text, font=("Arial", 12), fill="blue")
+
+# Inicjalizacja okna głównego
+root = tk.Tk()
+root.title("Wyświetlanie informacji na płótnie")
+root.geometry("600x900")
+root.maxsize(600,900)
+root.minsize(600,900)
+root.configure(borderwidth=5, relief="ridge")  # Ustawienie obramowania z szerokością 5 pikseli i efektem "ridge"
+root.configure(bg="lightblue")
+
+login_label=tk.Label(root,bg="black",fg="white",font=("Arial",10),text="Login: ")
+login_label.place(x=300,y=50,anchor="center")
+
+
+root.mainloop()

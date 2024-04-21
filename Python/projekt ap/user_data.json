@@ -1,0 +1,20 @@
+{
+    "Persons": {
+        "Jeremy": {
+            "login": "Jeremy",
+            "Imie": "Staszek",
+            "Nazwisko": "Barycki",
+            "Email": "stanislaw.barycki@gmail.com",
+            "Password": "123456",
+            "Treningi": {}
+        },
+        "Kruczek": {
+            "login": "Kruczek",
+            "Imie": "Jakub",
+            "Nazwisko": "Kruczek",
+            "Email": "kruczek@gmail.com",
+            "Password": "123456",
+            "Treningi": {}
+        }
+    }
+}
